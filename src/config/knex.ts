@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   client: 'mysql2',
   connection: {
     host: 'automacao-db',
