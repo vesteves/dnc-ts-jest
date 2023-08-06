@@ -1,7 +1,7 @@
 export default {
   client: 'mysql2',
   connection: {
-    host: 'automacao-db',
+    host: 'localhost',
     port: 3306,
     user: 'user',
     password: 'password',
