@@ -1,7 +1,7 @@
 import { ultimoValor } from '../tratamentos'
 import { listaMock } from '../__mocks_/tratamentos.mock'
 
-describe('tratamentos suite', () => {
+describe('Unit - tratamentos suite', () => {
   it('deve retornar Jade', () => {
     expect(ultimoValor(listaMock)).toBe('Jade')
   })

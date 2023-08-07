@@ -1,7 +1,7 @@
 import { Produto } from '../produto.model';
 import { KnexService } from '../../../service/knex';
 
-describe('Produto model Suite', () => {
+describe('Unit - Produto model Suite', () => {
   it('deve retornar valores do modelo', async () => {
     let knexServiceMock: any
 

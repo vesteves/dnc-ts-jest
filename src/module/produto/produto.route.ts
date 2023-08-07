@@ -10,8 +10,11 @@ router.get('/', async (_, res) => {
 });
 
 router.post('/', async (req, res) => {
+  if (!req.body.nome || !req.body.preco) {
+    return res.status(400).json({ msg: 'Nome e Preço são obrigatórios' })
+  }
   const data = await produtoFactory.store(req.body);
-  return res.status(200).json({ data });
+  return res.status(201).json({ data });
 });
 
 router.post('/ultimo-valor', async (req, res) => {

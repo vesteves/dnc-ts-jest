@@ -1,6 +1,6 @@
 import { sum } from '../sum'
 
-describe('libs suite', () => {
+describe('Unit - libs suite', () => {
   describe('sum suite', () => {
     it('should return true', () => {
       expect(true).toBe(true)
